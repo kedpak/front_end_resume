@@ -1,0 +1,319 @@
+body,
+div,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.clear-fix {
+    overflow: auto;
+}
+
+.education-entry,
+.work-entry,
+.project-entry {
+    padding: 0 5%;
+}
+
+h1 {
+    font-size: 40px;
+    color: #191970;
+    line-height: 48px;
+    display: inline;
+    font-family: 'Domine', serif;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 24px;
+    color: #191970;
+    line-height: 29px;
+    padding: 10px;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 20px;
+    color: #000;
+    line-height: 22px;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 17px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    padding: 10px 5%;
+}
+
+.date-text {
+    font-style: italic;
+    font-size: 18px;
+    color: #FF4500;
+    line-height: 16px;
+    float: center;
+}
+
+.location-text {
+    font-style: italic;
+    font-size: 16px;
+    color: #FF4500;
+    line-height: 16px;
+    float: right;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #333;
+    line-height: 21px;
+}
+
+a {
+    color: #1199c3;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+}
+
+.welcome-message {
+    font-style: italic;
+    font-size: 18px;
+    color: #f3f3f3;
+    line-height: 28px;
+}
+
+#skills-h3 {
+    color: #f5ae23;
+    display: none;
+}
+
+.orange {
+    background-color: #f5ae23;
+}
+
+.orange-text {
+    color: #000000;
+    font-size:20px;
+}
+
+.white-text {
+    font-weight: bold;
+    color: #191970;
+    font-size:20px;
+}
+
+.gray {
+    background-color: #f3f3f3;
+    padding-bottom: 10px;
+    clear: both;
+}
+
+.dark-gray {
+    background-color: #4a4a4a;
+}
+
+/* TODO: Replace with image later */
+#header {
+    background-color: #FFD700;
+}
+
+.flex-box {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+
+.center-content {
+    padding: 2.5% 5%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.biopic {
+    float: left;
+    padding: 10px;
+    width: 250px;
+    display: none;
+    height: 250px;
+}
+
+img {
+    padding: 10px;
+}
+
+span {
+    padding: 5px;
+    color: #191970;
+    font-size: 25px;
+}
+
+#lets-connect {
+    text-align: center;
+}
+
+.projImage {
+    width: 40%;
+    height: 40%;
+}
+
+.flex-item {
+    padding-left: 23%;
+}
+
+.navbar-brand{
+    color: red;
+}
+
+.school-text {
+    color: #FFFF00;
+    font-size: 17px;
+}
+
+.work-text {
+    color: #FFFF00;
+    font-size: 17px;
+}
+
+.onlineClass {
+    color:  #FFFF00;
+}
+
+.navSelection {
+    color:  #FFFF00;
+}
+
+#topContacts {
+    padding-left:;
+}
+
+
+#employer {
+    padding-bottom: 4px;
+}
+
+#projects {
+    text-align: center;
+    background-color: #FFD700;
+}
+
+#workExperience {
+    text-align: center;
+    min-height: 320px;
+    background-color:   #708090;
+}
+
+#education {
+    text-align: center;
+    background-color:   #708090;
+}
+
+#name{
+    color:black;
+}
+
+
+#map {
+    display: block;
+    height: 90%;
+    margin: 0 5%;
+}
+
+#mapDiv {
+    height: 400px;
+    width: 100%;
+    padding-bottom: 5%;
+    background-color: #FFD700;
+    text-align: center; 
+}
+
+#navMenu {
+    background-color:   #708090;
+}
+#navList {
+    background-color:   #FF6347;
+}
+
+
+
+
+
+
+
+/* Media queries to handle various device widths */
+
+@media only screen and (max-width: 1024px) {
+    #lets-connect {
+        margin-top: 5%;
+    };
+}
+
+@media only screen and (max-width:900px) {
+    .biopic {
+        width: 175px;
+        height: 175px;
+    };
+}
+
+@media only screen and (max-width: 750px) {
+    #lets-connect {
+        margin-top: 10%;
+    }
+
+    .biopic {
+        width: 150px;
+        height: 150px;
+    }
+
+    .welcome-message {
+        display: none;
+    }
+
+    .orange-text {
+        font-size: 20px;
+    }
+
+    .white-text {
+        font-size: 20px;
+    };
+    .maps {
+        height: 80%;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    #skills-h3,
+    #skills-list,
+    .biopic {
+        display: block;
+    };
+
+}
+
